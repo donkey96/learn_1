@@ -1,0 +1,59 @@
+.body {
+  background-color: #002a7e;
+  color: white;
+  height: 2000px;
+
+  .content {
+    background-color: #003ebb;
+    height: 50%;
+    justify-content: center;
+    img {
+      display: block;
+      width: 20%;
+      position: absolute;
+      left: 40%;
+      bottom: 50%
+    }
+    .menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      bottom: 20%;
+      text-align: center;
+      animation-name: fade;
+      animation-duration: 5s;
+      ul {
+        list-style-type: none;
+        li {
+          display: inline-block;
+          margin: 0 5%;
+          font-weight: bold;
+          a {
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+            padding-bottom: 8%;
+          }
+          a:hover {
+            border-bottom: 2px;
+            border-bottom-color: white;
+            border-bottom-style: solid;
+          }
+        }
+        li:hover {
+          transform: scale(1.2);
+          transition-duration: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
